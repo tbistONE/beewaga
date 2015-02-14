@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+    {%include 'navbar.html'%}
+{% endblock %}
+
+{% block content %}
+    
+<div class="myForm">
+  <form action="/login-check" method="post">{% csrf_token %}
+    {% for field in auth_form %}
+      {{field}}
+    {% endfor %}
+    <input class="btn btn-success" type="submit" id="logIn" value="Log In">
+  </form>
+</div>
+    
+
+{% endblock %}
+

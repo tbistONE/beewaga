@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block navbar%}
+    {% include 'navbar-logged-in.html'%}
+{% endblock%}
+
+<!-- Copies 'home.html' stuff here -->
+{% block content %}
+    {% with user.username as username %}
+        {{ block.super }}
+    {% endwith %}
+    
+    
+    <h1>Welcome {{username}}!</h1>
+        
+{% endblock %}

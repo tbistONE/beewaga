@@ -1,0 +1,61 @@
+$border-color: #D2D2D2;
+$navBtn-color: #3498db;
+
+div{
+    .jumbotron{
+        height: 500px;
+    }
+}
+.navbar{
+    height: 55px;
+    background-color: white;
+}
+
+#createAccount{
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 25px;
+    height: 40px;
+}
+#logIn{
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 25px;
+    height: 40px;
+}
+
+#navBtn{
+    color: $navBtn-color;
+    font-weight: bold;
+}
+
+
+    
+.myForm{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width:300px;
+    height:450px;
+    border: 1px solid $border-color;
+    
+    border-radius: 6px;
+    .registerInput{
+        width: 220px;
+        height: 40px;
+        margin-left: 40px;
+        
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .authInput{
+        width: 220px;
+        height: 40px;
+        margin-left: 40px;
+        
+        font-size: 18px;
+        margin-top: 15px;
+        
+    }
+}
+
