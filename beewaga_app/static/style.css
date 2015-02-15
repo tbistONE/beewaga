@@ -1,9 +1,17 @@
+@import url(http://fonts.googleapis.com/css?family=Lato);
 div .jumbotron {
   height: 500px; }
 
 .navbar {
   height: 55px;
-  background-color: white; }
+  background-color: white;
+  padding-bottom: 0px;
+  padding-top: 0px; }
+
+.navbar-brand {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 38px; }
 
 #createAccount {
   width: 150px;
@@ -16,10 +24,23 @@ div .jumbotron {
   margin-left: 75px;
   margin-top: 25px;
   height: 40px; }
+  #logIn :active {
+    color: green; }
 
 #navBtn {
   color: #3498db;
   font-weight: bold; }
+
+#navLinks {
+  font-family: "Lato", sans-serif;
+  color: #3498db;
+  font-size: 15px; }
+
+.navDisc {
+  font-family: "Lato", sans-serif;
+  font-size: 15px;
+  position: relative;
+  bottom: -4px; }
 
 .myForm {
   margin-left: auto;

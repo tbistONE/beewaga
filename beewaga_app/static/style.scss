@@ -1,5 +1,10 @@
+// Google Fonts Start Here //
+@import url(http://fonts.googleapis.com/css?family=Lato);
+// END OF GOOGLE FONTS //
+
 $border-color: #D2D2D2;
 $navBtn-color: #3498db;
+$lato: 'Lato', sans-serif;
 
 div{
     .jumbotron{
@@ -9,8 +14,14 @@ div{
 .navbar{
     height: 55px;
     background-color: white;
+    padding-bottom: 0px;
+    padding-top: 0px;
 }
-
+.navbar-brand{
+    font-family: $lato;
+    font-weight: bold;
+    font-size: 38px;
+}
 #createAccount{
     width: 150px;
     margin-left: 75px;
@@ -29,6 +40,18 @@ div{
     font-weight: bold;
 }
 
+#navLinks{
+    font-family: $lato;
+    color: #3498db;
+    font-size: 15px;
+}
+
+.navDisc{
+    font-family: $lato;
+    font-size: 15px;
+    position: relative;
+    bottom: -4px;
+}
 
     
 .myForm{
