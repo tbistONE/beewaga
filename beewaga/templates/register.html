@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+{% block content %}
+    {% if auth_form.non_field_errors or user_form.non_field_errors %}
+        <div class="flash error">
+            {{auth_form.non_field_errors}}
+            {{user_form.non_field_errors}}
+        </div>
+    {% endif %}
+
+<div class="myForm">
+    <form action="/signup" method="post">{% csrf_token %}
+        {% for field in user_form %}
+        {{ field }}
+        {% endfor %}
+        <input class="btn btn-success"id="createAccount" type="submit" value="Create Account">
+    </form>
+</div>
+
+{% endblock %}
+

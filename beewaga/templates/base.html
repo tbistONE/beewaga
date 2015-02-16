@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" href="{{ STATIC_URL }}bootstrap.min.css">
+    <link rel="stylesheet" href="{{ STATIC_URL }}navbar-static-top.css">
+    <!-- Custom CSS-->
+    <link rel="stylesheet" href="{{ STATIC_URL }}style.css"> 
+
+    
+    <meta charset="UTF-8">
+    <title>BeeWaga</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            {% block navbar %}                               
+            
+            {% endblock %}
+        </div>
+    </header> 
+        <div id="content">
+            <div class="wrapper">
+                {% block flash %}   
+                {% endblock %}
+
+                {% block content %}
+                {% endblock %}
+            </div>
+        </div>
+
+    
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>    
+<script src="{{ STATIC_URL }}js/bootstrap.min.js"></script>
+</body>
+</html>

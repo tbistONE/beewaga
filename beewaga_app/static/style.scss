@@ -1,0 +1,84 @@
+// Google Fonts Start Here //
+@import url("http://fonts.googleapis.com/css?family=Lato");
+// END OF GOOGLE FONTS //
+
+$border-color: #D2D2D2;
+$navBtn-color: #3498db;
+$lato: 'Lato', sans-serif;
+
+div{
+    .jumbotron{
+        height: 500px;
+    }
+}
+.navbar{
+    height: 55px;
+    background-color: white;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+.navbar-brand{
+    font-family: $lato;
+    font-weight: bold;
+    font-size: 38px;
+}
+#createAccount{
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 25px;
+    height: 40px;
+}
+#logIn{
+    width: 150px;
+    margin-left: 75px;
+    margin-top: 25px;
+    height: 40px;
+}
+
+#navBtn{
+    color: $navBtn-color;
+    font-weight: bold;
+}
+
+#navLinks{
+    font-family: $lato;
+    color: #3498db;
+    font-size: 15px;
+}
+
+.navDisc{
+    font-family: $lato;
+    font-size: 15px;
+    position: relative;
+    bottom: -4px;
+}
+
+    
+.myForm{
+    margin-left: auto;
+    margin-right: auto;
+    
+    width:300px;
+    height:450px;
+    border: 1px solid $border-color;
+    
+    border-radius: 6px;
+    .registerInput{
+        width: 220px;
+        height: 40px;
+        margin-left: 40px;
+        
+        font-size: 18px;
+        margin-top: 15px;
+    }
+    .authInput{
+        width: 220px;
+        height: 40px;
+        margin-left: 40px;
+        
+        font-size: 18px;
+        margin-top: 15px;
+        
+    }
+}
+
